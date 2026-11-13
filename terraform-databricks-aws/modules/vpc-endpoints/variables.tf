@@ -1,0 +1,9 @@
+variable "env"                 { type = string }
+variable "project_name"        { type = string }
+variable "vpc_id"              { type = string }
+variable "aws_region"          { type = string }
+variable "compute_subnet_ids"  { type = list(string) }
+variable "endpoint_subnet_ids" { type = list(string) }
+variable "workspace_sg_id"     { type = string }
+variable "endpoint_sg_id"      { type = string }
+variable "tags"                { type = map(string) }
